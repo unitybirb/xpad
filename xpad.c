@@ -386,7 +386,8 @@ static const struct xpad_device {
 	{ 0x3285, 0x0614, "Nacon Pro Compact", 0, XTYPE_XBOXONE },
 	{ 0x3767, 0x0101, "Fanatec Speedster 3 Forceshock Wheel", 0, XTYPE_XBOX },
 	{ 0xffff, 0xffff, "Chinese-made Xbox Controller", 0, XTYPE_XBOX },
-	{ 0x0000, 0x0000, "Generic X-Box pad", 0, XTYPE_UNKNOWN }
+	{ 0x0000, 0x0000, "Generic X-Box pad", 0, XTYPE_UNKNOWN },
+	{ 0x16d0, 0x10bc, "Azeron Cyborg Compact", 0, XTYPE_XBOX360 }
 };
 
 /* buttons shared with xbox and xbox360 */
@@ -525,6 +526,7 @@ static const struct usb_device_id xpad_table[] = {
 	XPAD_XBOX360_VENDOR(0x31e3),		/* Wooting Keyboards */
 	XPAD_XBOX360_VENDOR(0x3285),		/* Nacon GC-100 */
 	XPAD_XBOXONE_VENDOR(0x3285),		/* Nacon XBOX Series S/X Controllers */
+	XPAD_XBOX360_VENDOR(0x16d0),        	/* Azeron */
 	{ }
 };
 
